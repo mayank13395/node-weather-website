@@ -9,7 +9,9 @@ const forecast = require('./util/forecast');
 
 const app = express();
 
-app.listen(3000);
+const port = process.env.PORT || 3000
+
+app.listen(port);
 
 
 //using public directory to load static path

@@ -12,7 +12,7 @@ form.addEventListener('submit', (e)=>{
     const address = input.value;
 
     console.log(address);
-    console.log('http://localhost:3000/weather?address='+address);
+    console.log('/weather?address='+address);
     
     
      
