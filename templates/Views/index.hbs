@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn{
+    text-align: center;
+}
+
+ button {
+
+
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ 
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.location{
+    margin-top: 65px;
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
+}
+.weather{
+     margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: blueviolet;
+
+}
+
+    </style>
+   
+</head>
+
+<body>
+
+    {{>header}}
+<h2 style="text-align:center;color:blue">Check Weather of your Area</h2>
+
+ <form >
+    <label style="font-size: 20px;color: blue;" for="address">Enter the location:</label>
+    <input type="text" id="address"  placeholder="location">
+
+    <div class="btn">
+    
+      <button type="submit">Show me Weather</button>
+
+     </div>
+
+
+    </form>
+
+    <div class="location">
+       
+        <p  id="location"></p>
+        
+    </div>
+    <div class="weather">
+        
+        <p id="weather"></p>
+        
+    </div>
+
+
+     <script src="/js/app.js"> </script>
+
+</body>
+
+
+</html>
+
+
