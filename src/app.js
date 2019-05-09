@@ -86,15 +86,15 @@ app.set('view engine', 'hbs')
 app.set('views', viewsPath)
 
 app.get('/about', (req,res)=>{
-    res.render('about')
+    res.render('./about')
 })
 
 app.get('', (req,res)=>{
-    res.render('index')
+    res.render('./index')
 })
 
 app.get('/help', (req,res)=>{
-    res.render('help')
+    res.render('./help')
 })
 
 
